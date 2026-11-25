@@ -643,3 +643,21 @@ select:focus-visible, textarea:focus-visible {
         padding: 25px 15px;
     }
 }
+/* Улучшение отображения форм на мобильных устройствах */
+@media (max-width: 480px) {
+    input,
+    textarea,
+    select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .about-benefits .card {
+        margin-bottom: 15px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
