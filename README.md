@@ -28,3 +28,10 @@ HTML5, CSS3, JavaScript, Git и GitHub.
 
 После включения GitHub Pages добавьте сюда фактическую ссылку на сайт:
 `https://ВАШ-ЛОГИН.github.io/ИМЯ-РЕПОЗИТОРИЯ/`
+
+
+## Сайт
+
+Сайт опубликован через GitHub Pages:
+
+https://mejrambekpirzanov-cell.github.io/stroybrigada/
