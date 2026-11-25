@@ -35,3 +35,10 @@ HTML5, CSS3, JavaScript, Git и GitHub.
 Сайт опубликован через GitHub Pages:
 
 https://mejrambekpirzanov-cell.github.io/stroybrigada/
+
+
+## Сайт
+
+Сайт опубликован через GitHub Pages:
+
+https://mejrambekpirzanov-cell.github.io/stroybrigada/
