@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Строительная бригада</title>
+
+```
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🏗️ Строительная бригада</div>
+
+```
+<nav>
+    <a href="#home">Главная</a>
+    <a href="#services">Услуги</a>
+    <a href="#materials">Материалы</a>
+    <a href="#order">Заказать</a>
+    <a href="#contacts">Контакты</a>
+        <a href="about.html">О компании</a>
+    <button class="admin-open-btn" onclick="openAdmin()">
+        🔐 Админка
+    </button>
+</nav>
+```
+
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <h1>Строительная бригада</h1>
+        <p>Строительство, ремонт и продажа материалов</p>
+        <a href="#order" class="button">Вызвать бригаду</a>
+    </div>
+</section>
+
+<section id="services">
+    <h2 class="title">Наши услуги</h2>
+
+```
+<div class="grid" id="servicesGrid">
+
+    <div class="card">
+        <div class="icon">🏠</div>
+        <h3>Строительство домов</h3>
+        <p>Дома, дачи и коттеджи.</p>
+        <div class="price">Цена договорная</div>
+    </div>
+
+    <div class="card">
+        <div class="icon">🔨</div>
+        <h3>Ремонт помещений</h3>
+        <p>Косметический и капитальный ремонт.</p>
+        <div class="price">Цена договорная</div>
+    </div>
+
+    <div class="card">
+        <div class="icon">🧱</div>
+        <h3>Кладка кирпича</h3>
+        <p>Кирпич и строительные блоки.</p>
+        <div class="price">от 3 000 ₸/м²</div>
+    </div>
+
+    <div class="card">
+        <div class="icon">🎨</div>
+        <h3>Отделочные работы</h3>
+        <p>Штукатурка, покраска и шпаклевка.</p>
+        <div class="price">Цена договорная</div>
+    </div>
+
+    <div class="card">
+        <div class="icon">🏗️</div>
+        <h3>Кровельные работы</h3>
+        <p>Монтаж и ремонт крыш.</p>
+        <div class="price">Цена договорная</div>
+    </div>
+
+    <div class="card">
+        <div class="icon">⚡</div>
+        <h3>Электромонтаж</h3>
+        <p>Проводка и освещение.</p>
+        <div class="price">от 3 000 ₸</div>
+    </div>
+
+    <div class="card">
+        <div class="icon">⚡</div>
+        <h3>Заливка бетона</h3>
+        <p>Стяжка, теплый пол, фундамент.</p>
+        <div class="price">Цена договорная</div>
+    </div>
+
+</div>
+```
+
+</section>
+
+<section id="materials">
+
+```
+<h2 class="title">Строительные материалы</h2>
+
+<div class="materials" id="materialsGrid">
+
+    <div class="material">
+        <div class="material-img">🧱</div>
+        <h3>Кирпич</h3>
+        <p>Красный строительный кирпич</p>
+        <div class="material-price">120 ₸/шт.</div>
+        <a href="#order" class="button">Заказать</a>
+    </div>
+
+    <div class="material">
+        <div class="material-img">🪣</div>
+        <h3>Цемент</h3>
+        <p>Цемент М500, 25 кг</p>
+        <div class="material-price">8000 ₸</div>
+        <a href="#order" class="button">Заказать</a>
+    </div>
+
+    <div class="material">
+        <div class="material-img">🪵</div>
+        <h3>Пиломатериалы</h3>
+        <p>Доски и брус</p>
+        <div class="material-price">от 35 000 ₸/м³</div>
+        <a href="#order" class="button">Заказать</a>
+    </div>
+
+    <div class="material">
+        <div class="material-img">🏗️</div>
+        <h3>Газоблок</h3>
+        <p>Газобетонные блоки</p>
+        <div class="material-price">400 ₸/шт.</div>
+        <a href="#order" class="button">Заказать</a>
+    </div>
+
+</div>
+```
+
+</section>
+
+<section>
+
+```
+<h2 class="title">Почему выбирают нас?</h2>
+
+<div class="advantages">
+
+    <div class="advantage">
+        <div class="icon">👷</div>
+        <h3>Опыт</h3>
+        <p>Профессиональные специалисты.</p>
+    </div>
+
+    <div class="advantage">
+        <div class="icon">💰</div>
+        <h3>Цены</h3>
+        <p>Выгодная стоимость работ.</p>
+    </div>
+
+    <div class="advantage">
+        <div class="icon">⏱️</div>
+        <h3>Сроки</h3>
+        <p>Работаем качественно и вовремя.</p>
+    </div>
+
+    <div class="advantage">
+        <div class="icon">🛡️</div>
+        <h3>Гарантия</h3>
+        <p>Гарантия на выполненные работы.</p>
+    </div>
+
+</div>
+```
+
+</section>
+
+<section id="order">
+
+```
+<div class="form-box">
+
+    <h2>Вызвать строительную бригаду</h2>
+
+    <form id="orderForm">
+
+        <label>Ваше имя</label>
+        <input
+            id="clientName"
+            type="text"
+            placeholder="Введите имя"
+            required
+        >
+
+        <label>Номер телефона</label>
+        <input
+            id="clientPhone"
+            type="tel"
+            placeholder="+7 (___) ___-__-__"
+            required
+        >
+
+        <label>Услуга</label>
+
+        <select id="clientService">
+            <option>Строительство дома</option>
+            <option>Ремонт</option>
+            <option>Кладка кирпича</option>
+            <option>Отделочные работы</option>
+            <option>Кровельные работы</option>
+            <option>Электромонтаж</option>
+            <option>Заливка бетона</option>
+        </select>
+
+        <label>Адрес объекта</label>
+
+        <input
+            id="clientAddress"
+            type="text"
+            placeholder="Введите адрес"
+        >
+
+        <label>Описание задачи</label>
+
+        <textarea
+            id="clientDescription"
+            placeholder="Опишите вашу задачу"
+        ></textarea>
+
+        <button class="button" type="submit">
+            Отправить заявку
+        </button>
+
+    </form>
+
+</div>
+```
+
+</section>
+
+<section id="contacts">
+
+```
+<h2 class="title">Контакты</h2>
+
+<div class="contacts">
+
+    <div class="contact">
+        <div class="icon">📞</div>
+        <h3>Телефон</h3>
+        <p>
+            <a href="tel:+77771234567">
+                +7 777 123 45 67
+            </a>
+        </p>
+    </div>
+
+    <div class="contact">
+        <div class="icon">📍</div>
+        <h3>Адрес</h3>
+        <p>г. Астана, Казахстан</p>
+    </div>
+
+    <div class="contact">
+        <div class="icon">✉️</div>
+        <h3>Email</h3>
+        <p>
+            <a href="mailto:info@stroybrigada.kz">
+                info@stroybrigada.kz
+            </a>
+        </p>
+    </div>
+
+</div>
+```
+
+</section>
+
+<footer>
+    ©️ 2026
+    <span>Строительная бригада</span>.
+    Все права защищены.
+</footer>
+
+<!-- ==================================================
+     УВЕДОМЛЕНИЕ
+================================================== -->
+
+<div id="toast"></div>
+
+<!-- ==================================================
+     АДМИН-ПАНЕЛЬ
+================================================== -->
+
+<div class="admin-modal" id="adminModal">
+
+```
+<div class="admin-box">
+
+    <div class="admin-header">
+
+        <h2>🔐 Панель администратора</h2>
+
+        <button class="admin-close" onclick="closeAdmin()">
+            ✕ Закрыть
+        </button>
+
+    </div>
+
+    <!-- LOGIN -->
+
+    <div id="loginScreen" class="admin-login">
+
+        <h2>Вход в админку</h2>
+
+        <div id="loginError" class="login-error">
+            Неверный пароль
+        </div>
+
+        <form onsubmit="loginAdmin(event)">
+
+            <label>Пароль администратора</label>
+
+            <input
+                id="adminPassword"
+                type="password"
+                placeholder="Введите пароль"
+                required
+            >
+
+            <button class="button" style="width:100%;">
+                Войти
+            </button>
+
+        </form>
+
+        <small>
+            Пароль по умолчанию: admin123
+        </small>
+
+    </div>
+
+
+    <!-- DASHBOARD -->
+
+    <div id="adminDashboard" class="admin-content" style="display:none;">
+
+        <div class="dashboard">
+
+            <div class="stat">
+                <div class="stat-title">Всего заявок</div>
+                <div class="stat-number" id="totalOrders">0</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-title">Новые</div>
+                <div class="stat-number" id="newOrders">0</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-title">В работе</div>
+                <div class="stat-number" id="workOrders">0</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-title">Завершено</div>
+                <div class="stat-number" id="doneOrders">0</div>
+            </div>
+
+        </div>
+
+
+        <!-- ЗАЯВКИ -->
+
+        <div class="admin-section">
+
+            <h3>📋 Заявки клиентов</h3>
+
+            <div class="admin-actions">
+
+                <input
+                    type="text"
+                    id="searchOrders"
+                    placeholder="🔎 Поиск по имени, телефону..."
+                    oninput="renderOrders()"
+                >
+
+                <select
+                    id="filterStatus"
+                    onchange="renderOrders()"
+                >
+                    <option value="all">Все статусы</option>
+                    <option value="Новая">Новые</option>
+                    <option value="В работе">В работе</option>
+                    <option value="Завершена">Завершённые</option>
+                    <option value="Отменена">Отменённые</option>
+                </select>
+
+                <button class="small-btn red" onclick="clearOrders()">
+                    🗑️ Очистить все
+                </button>
+
+            </div>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>ID</th>
+                            <th>Клиент</th>
+                            <th>Телефон</th>
+                            <th>Услуга</th>
+                            <th>Адрес</th>
+                            <th>Дата</th>
+                            <th>Статус</th>
+                            <th>Действия</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="ordersTable"></tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+
+        <!-- ДОБАВЛЕНИЕ УСЛУГИ -->
+
+        <div class="admin-section">
+
+            <h3>➕ Добавить новую услугу</h3>
+
+            <form id="serviceForm">
+
+                <div class="admin-form-grid">
+
+                    <div>
+                        <label>Иконка</label>
+                        <input
+                            id="newServiceIcon"
+                            type="text"
+                            placeholder="🏠"
+                            maxlength="4"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label>Название</label>
+                        <input
+                            id="newServiceName"
+                            type="text"
+                            placeholder="Например: Фасадные работы"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label>Цена</label>
+                        <input
+                            id="newServicePrice"
+                            type="text"
+                            placeholder="от 5 000 ₸"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label>Описание</label>
+                        <input
+                            id="newServiceDescription"
+                            type="text"
+                            placeholder="Описание услуги"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+                <br>
+
+                <button class="button">
+                    Добавить услугу
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- ДОБАВЛЕНИЕ МАТЕРИАЛА -->
+
+        <div class="admin-section">
+
+            <h3>➕ Добавить строительный материал</h3>
+
+            <form id="materialForm">
+
+                <div class="admin-form-grid">
+
+                    <div>
+                        <label>Иконка</label>
+                        <input
+                            id="newMaterialIcon"
+                            type="text"
+                            placeholder="🧱"
+                            maxlength="4"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label>Название</label>
+                        <input
+                            id="newMaterialName"
+                            type="text"
+                            placeholder="Название материала"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label>Описание</label>
+                        <input
+                            id="newMaterialDescription"
+                            type="text"
+                            placeholder="Описание"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label>Цена</label>
+                        <input
+                            id="newMaterialPrice"
+                            type="text"
+                            placeholder="1000 ₸/шт."
+                            required
+                        >
+                    </div>
+
+                </div>
+
+                <br>
+
+                <button class="button">
+                    Добавить материал
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- НАСТРОЙКИ -->
+
+        <div class="admin-section">
+
+            <h3>⚙️ Управление</h3>
+
+            <button
+                class="small-btn gray"
+                onclick="logoutAdmin()"
+            >
+                🚪 Выйти из админки
+            </button>
+
+            <button
+                class="small-btn red"
+                onclick="resetSiteData()"
+            >
+                ♻️ Сбросить дополнительные данные
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
