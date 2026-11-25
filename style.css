@@ -600,3 +600,46 @@ select:focus-visible, textarea:focus-visible {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
+/* Адаптация для планшетов */
+@media (max-width: 900px) {
+    .container {
+        width: 95%;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    section {
+        padding: 25px 15px;
+    }
+}
